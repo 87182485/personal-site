@@ -36,7 +36,11 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3 {
+    overflow-wrap: break-word;
 }
 
 /* Typography & Layout */
@@ -552,5 +556,34 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 3.5rem; }
-    .nav-links { display: none; }
+    
+    .navbar {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    .nav-links { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 0.9rem;
+    }
+
+    .nav-socials {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    .glow-bg {
+        width: 100vw;
+        height: 100vw;
+    }
 }
